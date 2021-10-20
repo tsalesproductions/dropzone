@@ -19,7 +19,7 @@ $scDropZoneConfig = {
                 let attr = element.parentElement.getAttribute('data-input');
                 if(!attr) return;
                 let input = element.parentElement.querySelector(`input[name='${attr}']`);
-                if(xhr.responseText){
+                if(xhr){
                     input.value = xhr.responseText;  
                 }
             });
